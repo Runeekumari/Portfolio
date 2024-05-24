@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+            color: #333;
+        }
+
+        header {
+            background-color: rgb(40, 2, 71);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            overflow: hidden;
+        }
+
+        .projects-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .projects-table th, .projects-table td {
+            padding: 20px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .projects-table thead {
+            background-color: rgb(40, 2, 71);
+            color: #fff;
+        }
+
+        .projects-table th {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .projects-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .projects-table tbody tr:hover {
+            background-color: #e9f5ff;
+            transition: background-color 0.3s ease;
+        }
+
+        .projects-table a {
+            color: rgb(40, 2, 71);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .projects-table a:hover {
+            background-color: rgb(40, 2, 71)4CAF50;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgb(40, 2, 71);
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 0 10px;
+            }
+
+            .projects-table th, .projects-table td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+
+    <div class="container">
+        <table class="projects-table">
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Technologies</th>
+                    <th>GitHub Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amazon UI</td>
+                    <td>Developed Amazon clone UI</td>
+                    <td>HTML, CSS</td>
+                    <td><a href="https://runeekumari.github.io/Amazon/" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Netflix UI</td>
+                    <td>Developed Netflix clone UI</td>
+                    <td>React, Node.js</td>
+                    <td><a href="https://runeekumari.github.io/Netflix-India/" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Doctor Booking website</td>
+                    <td>The Doctor Booking website streamlines appointment scheduling with healthcare professionals. Using React, 
+                        Tailwind CSS, Express, MongoDB, and Node.js, it ensures seamless user experience and robust functionality.</td>
+                    <td>React, 
+                        Tailwind CSS, Express, MongoDB, and Node.js</td>
+                    <td><a href="https://github.com/Runeekumari/Healthcare_frontend-main" target="_blank">View Project</a></td>
+                </tr>
+
+         </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Runee Kumari. All Rights Reserved.</p>
+    </footer>
+</body>
+</html> 
+

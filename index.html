@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUNEE PORTFOLIO</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(40, 2, 71);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgb(98, 4, 187);
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(42, 62, 241, 0.1);
+        }
+
+        nav h1 {
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 10px 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #3b1d77;
+        }
+
+        .rightsection {
+           
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav ul li {
+                float: none;
+            }
+        }
+
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .firstsection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .firstsection>div {
+            flex: 1 1 100%;
+            /* Each div takes full width on small screens */
+            margin-bottom: 20px;
+            /* Add some margin between sections */
+        }
+
+        .leftsection {
+            width: 100%;
+            /* Full width for both sections on small screens */
+            text-align: center;
+            font-size: 1.5rem;
+            /* Center align text and buttons */
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .rightsection {
+            width: 100%;
+            /* Full width for both sections on small screens */
+            text-align: center;
+            /* Center align text and buttons */
+        }
+
+        @media screen and (min-width: 768px) {
+.leftsection{
+    font-size: 3rem;
+}
+            /* Medium and large screens */
+            .firstsection>div {
+                flex: 1;
+                /* Each div takes equal width in columns */
+                margin-bottom: 0;
+                /* Remove margin between sections */
+            }
+        }
+
+        .rightsection img {
+            max-width: 50%;
+            /* Make sure image doesn't overflow */
+        }
+
+        .purple {
+            color: rgb(133, 6, 126);
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(133, 6, 126);
+        }
+
+        .icon {
+            margin: 20px;
+        }
+
+        .footer {
+            background-color: rgb(32, 31, 31);
+            padding: 10PX;
+            text-align: center;
+        }
+
+        /*----footer--------*/
+
+        .footer h4 {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-weight: 600;
+            padding-top: 10px;
+
+
+        }
+
+
+        .bi {
+            color: #3936f4;
+            margin: 0 10px;
+            cursor: pointer;
+            padding: 10px 0;
+
+        }
+
+        .bi-heart {
+            color: #f44336;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 style="font-size:xx-large;"> Runee's Portfolio</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, My name is <span class="purple">Runee</span>
+
+                <div>and I am a
+                </div>
+                <span class="element"></span>
+
+                <div class="buttons">
+                    <button class="btn" onclick="downloadPDF()">Download PDF</button>
+                    <button onclick="window.location.href='https://github.com/Runeekumari'" class="btn">Github</button>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="/images/runee.png" alt="">
+            </div>
+        </section>
+
+    </main>
+    <hr>
+
+    <!--------footer-------------->
+    <footer class="footer">
+        <h4>CONTACT ME</h4>
+
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/runee-kumari" class="fab fa-linkedin"
+                style="color: rgb(88, 169, 240); font-size: 25px;"></a>
+            <a href="https://github.com/Runeekumari" class="fab fa-github" style="color: white; font-size: 25px;"></a>
+
+        </div>
+        <div style="margin-top: 15px;">
+            <p>Made with <i style="color: red;" class="fa-solid fa-heart"></i> By Runee</p>
+        </div>
+        </div>
+    </footer>
+    <!---- Setup and start animation ---->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".element", {
+            strings: ["Frontend Developer.", " Web Designer.", "Mern Stack Developer."],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+        function downloadPDF() {
+            var anchor = document.createElement('a');
+            anchor.href = 'resume.pdf';
+            anchor.download = 'reume.pdf';
+            anchor.click();
+        }
+    </script>
+</body>
+
+</html>

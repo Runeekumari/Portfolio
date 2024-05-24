@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background: rgb(98, 4, 187);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 10px;
+        }
+        .intro {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .contact-form {
+            background: rgb(40, 2, 71);
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .contact-form h2 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .form-control {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: block;
+        }
+        .contact-form button {
+            background: #007BFF;
+            color: #fff;
+            border: 0;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 20px auto 0 auto;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact-info h3, .contact-info p, .contact-info a {
+            margin: 0;
+            color: #333;
+        }
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .social-icons {
+            text-align: center;
+            margin: 20px 0;
+    
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 2rem;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007BFF;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            .intro p {
+                font-size: 1em;
+            }
+            .form-control {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <p>I'd love to hear from you! Whether you have a question, a project idea, or just want to say hi, feel free to reach out.</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="your-server-endpoint" method="POST">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:runikumari10881@gmail.com">runikumari10881@gmail.com</a></p>
+            <p>Phone: <a href="tel:+6209848045">6209848045</a></p>
+        </section>
+
+        <section  class="social-icons" >
+            <h3>Connect with Me</h3>
+            <a href="https://linkedin.com/in/runee-kumari" style=" color: #007BFF;" target="_blank" class="fab fa-linkedin"></a>
+            <a href="https://github.com/Runeekumari"  style=" color: black;"  target="_blank" class="fab fa-github"></a>
+        </section>
+    </div>
+</body>
+</html>
